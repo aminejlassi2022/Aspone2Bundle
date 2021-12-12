@@ -1,0 +1,13 @@
+services:
+    aspone.services.formulaire:
+        class: InterInvest\Aspone2Bundle\Services\Formulaire
+        arguments: ["@kernel", "@aspone.services.dictionnaire"]
+
+    aspone.services.dictionnaire:
+        class: InterInvest\Aspone2Bundle\Services\Dictionnaire
+        arguments: ["@kernel"]
+    aspone.services.soap:
+        class: InterInvest\Aspone2Bundle\Services\SOAP
+        arguments: ["@kernel"]
+    aspone.services.monitoring:
+        class: InterInvest\Aspone2Bundle\Services\Monitoring
